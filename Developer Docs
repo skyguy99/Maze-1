@@ -1,3 +1,4 @@
+Maze1 is supported in Unity 5 or higher.
 Script explanations for editing and additions to Maze 1:
 
 > spawnCube.cs - spawns cubes in game by generating a random vector position within the confines of each scene's maze. Ranges for the x and z values of the vector must be updated in accordance with any new mazes added. Reference is made to getCube.cs for collision detection. 
