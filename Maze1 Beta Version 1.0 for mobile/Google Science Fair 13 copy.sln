@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{BEEA0CAB-4E54-0DC3-1E50-9ECEF2B3014B}") = "Google Science Fair 13 copy", "Assembly-CSharp.csproj", "{5A115E78-35B0-E4D3-D143-D648BA2E0109}"
+EndProject
+Project("{BEEA0CAB-4E54-0DC3-1E50-9ECEF2B3014B}") = "Google Science Fair 13 copy", "Assembly-CSharp-Editor.csproj", "{1173FE6A-FDDA-1F3A-6857-B8D2A40B200F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A115E78-35B0-E4D3-D143-D648BA2E0109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A115E78-35B0-E4D3-D143-D648BA2E0109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A115E78-35B0-E4D3-D143-D648BA2E0109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A115E78-35B0-E4D3-D143-D648BA2E0109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1173FE6A-FDDA-1F3A-6857-B8D2A40B200F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1173FE6A-FDDA-1F3A-6857-B8D2A40B200F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1173FE6A-FDDA-1F3A-6857-B8D2A40B200F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1173FE6A-FDDA-1F3A-6857-B8D2A40B200F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
