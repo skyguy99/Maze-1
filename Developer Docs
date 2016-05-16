@@ -1,9 +1,36 @@
 Maze1 is supported in Unity 5 or higher.
-Script explanations for editing and additions to Maze 1:
+Main script explanations for editing and additions to Maze 1:
 
-> spawnCube.cs - spawns cubes in game by generating a random vector position within the confines of each scene's maze. Ranges for the x and z values of the vector must be updated in accordance with any new mazes added. Reference is made to getCube.cs for collision detection. 
-> getCube.cs - 
-> GameLogic.cs - 
-> ViewSwap.cs - 
-> UIManager.cs - 
-> bottomUIManager.cs - 
+> GameLogic.cs - contains definitions for majority of all gameplay functions and variables for levels 1-3
+  - roundReset() is called by Round Canvas "Advance button" - this func stops the timer, resets player position, increments round number, and contains reference to move.cs and CardboardReticle.cs
+  - alterCanvasDirection() alters canvas position and rotation in accordance with rotation of Cardboard Head (headRot variable)
+  - cubeFound() increments score (# of times cube found) and resets static cubeFound variable in CardboardReticle.cs
+  - gameOverImagesUpdate() and gameOverImagesUpdate2() reposition and set correct sprite to images in game over canvas and giv up canvas based on round complete booleans
+  - Start() func resets all static variables 
+  - Update() func contains statements that check if static cubeFound variable has been triggered, disables game canvases and updates text on canvases (use this for debugging)
+
+> move.cs - enables in game movement using touch controls by adding forward force to rigidbody attached to CardboardMain object
+  - Defines static moveEnabled boolean to disable/enable movement via GameLogic.cs
+  - FixedUpdate() adds Vector3 force to rigidbody, moves Main Cardboard camera, and calls StickToGroundHelper () and GroundCheck ()
+  - GroundCheck () sphere casts down beyond bottom of the capsule collider in Cardboard object to see if the capsule is colliding round the bottom
+  - GetInput () returns a Vector3 for movement in FixedUpdate() based on user touch/mouse click
+  - StickToGroundHelper () keeps Cardboard rigidbody from toppling over by sphere casting below capsule collider
+  
+> ViewSwap.cs - enables and disables Cardboard VR mode when switching to Cam2 monoscopic camera and back to MainCamera stereoscopic camera under Cardboard object
+  - Alters visibility of Trail Renderer attached to Cardboard object for user tracking in Switch() function
+  - Switchback() returns to VR mode after WaitForSeconds call
+  - ActivateVRMode(bool) disables or enables objects in mono object array and cardboard object array in accordance with boolean value (whether going to or from VR mode)
+  - Switch() called by "View Path" button in round canvas and Cardboard.SDK.OnBackButton/escape button to switch to overview map 
+
+> spawnCube.cs - spawns cubes in game by generating a random vector position within the confines of each scene's maze. 
+  - Ranges for the x and z values of the vector must be updated in accordance with any new mazes added. 
+  - Reference getCube.cs for collision detection. 
+  
+> email.cs - sends data report to developer address to be REPLACED BY DEVELOPER on line 40
+  - Reference to UIManagerScript.cs for and selectManager.cs for round number and maze level title
+  - connects to gmail port 587 to send from the Maze1 email address
+  - Reference to GameLogic.cs for round completion
+
+> getCube.cs - detects cube collision with maze walls during spawn by spawnCube.cs to avoid cubes spawning into walls
+  - OnCollisionStay(Collision) tests for collision with Cardboard object or Maze walls and destroys cube if touching to trigger respawn
+
