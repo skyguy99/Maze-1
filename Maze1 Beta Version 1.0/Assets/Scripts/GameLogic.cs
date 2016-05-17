@@ -9,7 +9,6 @@ public class GameLogic : MonoBehaviour {
 	//For rotation
 	public GameObject world;
 	private Vector3 headTemp = new Vector2(0.0f, 0.0f);
-	//private Vector3 newPos = new Vector3 (1.25f,0.4f,-0.4f);
 
 	private float headX;
 
@@ -124,7 +123,6 @@ public class GameLogic : MonoBehaviour {
 
 		countdown.text = "3";
 
-		//CardboardReticle.cubeFound = false;
 		roundOver.enabled = false;
 		eyeCanvas.enabled = false; 
 
@@ -196,14 +194,8 @@ public class GameLogic : MonoBehaviour {
 	//Resets round when clicked
 	public void roundReset() {
 
-		//trail.GetComponent<Renderer>().material = trailInvisible;
-
 		roundCanvasUp = false;
 		roundWasReset = true;
-		//Debug.Log ("head is:"+head1.transform.localRotation);
-		//head1.transform.localRotation = Quaternion.Euler(90.0f,70.0f,80.0f);
-		//world.transform.rotation = headRotChanging;
-
 
 		if (!gameOver) {
 			m_RigidBody.transform.position = temp;
@@ -267,7 +259,6 @@ public class GameLogic : MonoBehaviour {
 		else if (currentRound == 5)
 			email.r5Time = minutes + ":" + seconds;
 
-		//Debug.Log ("Set time called for"+currentRound);
 	}
 
 	//Updates canvas when cube found
@@ -577,12 +568,9 @@ public class GameLogic : MonoBehaviour {
 		alterCanvasDirection();
 
 		//world.transform.rotation = new Quaternion(0.0f, )
-		Debug.Log ("head is:"+head1.transform.localRotation);
-		//headRot = head1.transform.localRotation;
-		//Debug.Log ("HeadRot"+headRot);
-		//roundOver.transform.rotation = headRot;
+		//Debug.Log ("head is:"+head1.transform.localRotation);
 
-		Debug.Log ("Canvas is"+roundOver.transform.position);
+		//Debug.Log ("Canvas is"+roundOver.transform.position);
 		//Debug.Log ("world is"+world.transform.rotation);
 
 		//-------------------------------------------------
@@ -598,7 +586,7 @@ public class GameLogic : MonoBehaviour {
 		if(timerOn)
 			timer += Time.deltaTime;
 
-		//Debug.Log (timer);
+
 		updateFinalText();
 		updateFinalTextRounds ();
 		updateEyeText ();
@@ -608,7 +596,7 @@ public class GameLogic : MonoBehaviour {
 				//Reset round if still rounds to go
 				updateRoundComplete ();
 				if (currentRound < UIManagerScript.roundNum) {
-					//Debug.Log ("Round over!");
+					
 					roundOverFunc ();
 				} else {
 					Debug.Log ("Rounds over! Game over");

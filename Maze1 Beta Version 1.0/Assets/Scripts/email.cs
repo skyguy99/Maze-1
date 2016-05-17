@@ -67,6 +67,7 @@ public class email : MonoBehaviour {
 			};
 
 			//For including attachments
+
 			//string attachmentPath = @"C:\somefile.txt";
 			//System.Net.Mail.Attachment attachment = new System.Net.Mail.Attachment(attachmentPath);
 			//mail.Attachments.Add(attachment);

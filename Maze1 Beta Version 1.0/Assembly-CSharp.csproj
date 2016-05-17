@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{00438DF4-D5DD-86E7-6B2C-BDFA3415756E}</ProjectGuid>
+    <ProjectGuid>{35D3F2A0-ED6F-154A-71ED-8E93D4E957FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CamManager.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUI.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIMouse.cs" />
      <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIWindow.cs" />
@@ -72,8 +71,9 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
-     <Compile Include="Assets\CardboardWebplayerDevice.cs" />
+     <Compile Include="Assets\Scripts\CamManager.cs" />
      <Compile Include="Assets\Scripts\CardboardReticle.cs" />
+     <Compile Include="Assets\Scripts\CardboardWebplayerDevice.cs" />
      <Compile Include="Assets\Scripts\GameLogic.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GetCube.cs" />
@@ -92,6 +92,8 @@
      <Compile Include="Assets\Scripts\ViewSwap.cs" />
      <Compile Include="Assets\Scripts\WallScript.cs" />
      <Compile Include="Assets\Scripts\bottomUIScript.cs" />
+     <Compile Include="Assets\Scripts\btnHelper.cs" />
+     <Compile Include="Assets\Scripts\cubeCanvas.cs" />
      <Compile Include="Assets\Scripts\email.cs" />
      <Compile Include="Assets\Scripts\eyeImgScript.cs" />
      <Compile Include="Assets\Scripts\loadGame.cs" />
@@ -99,8 +101,6 @@
      <Compile Include="Assets\Scripts\roundSelect.cs" />
      <Compile Include="Assets\Scripts\selectManager.cs" />
      <Compile Include="Assets\Scripts\spawnCubes.cs" />
-     <Compile Include="Assets\btnHelper.cs" />
-     <Compile Include="Assets\cubeCanvas.cs" />
      <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Accordion.cs" />
      <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\AccordionElement.cs" />
      <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Tweening\FloatTween.cs" />
