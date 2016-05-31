@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{99733B76-8C54-B36C-60D9-DC8C0753DC45}") = "Maze1 15 copy 2", "Assembly-CSharp.csproj", "{C50D3DD8-7D67-8CD8-94A3-FA94BEA66177}"
+EndProject
+Project("{99733B76-8C54-B36C-60D9-DC8C0753DC45}") = "Maze1 15 copy 2", "Assembly-CSharp-Editor.csproj", "{1A7146A1-FEB2-BF1F-DFAB-93993998A6EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C50D3DD8-7D67-8CD8-94A3-FA94BEA66177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50D3DD8-7D67-8CD8-94A3-FA94BEA66177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50D3DD8-7D67-8CD8-94A3-FA94BEA66177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50D3DD8-7D67-8CD8-94A3-FA94BEA66177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7146A1-FEB2-BF1F-DFAB-93993998A6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7146A1-FEB2-BF1F-DFAB-93993998A6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7146A1-FEB2-BF1F-DFAB-93993998A6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7146A1-FEB2-BF1F-DFAB-93993998A6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
